@@ -37,6 +37,6 @@ Once the jumpers are soldered inplace to the Serial sockets, it becomes more dif
 Some ESP32Cams, specifically those that come with a programming PCB board have a localalised Right side GND (see image below). These cameras wont work with the original kilocam unless this GND/R pin is removed. This however makes reprogramming the ESP more difficult as this GND is needed for programming the board. With the With kilocamUlta, you can keep the pin in place as the dupont connector is removed (see top image).
 
 
-
+![Detail of ESP32Cam boards that come with a programming board that stops kilocam working due to the GND/R pin](https://github.com/ExtinctionEvent/KiloCamUltra/blob/main/images/ESP32Cam%20with%20GND:R.jpg?raw=true)
 
 
