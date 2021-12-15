@@ -15,7 +15,7 @@ The Kilocam is an ultralow power arduino based PCB for controlling ESP32Cameras.
 A cheap and easy to use camera board.
 
 ### How to use
-This pair of sketches is a direct replacement for the original sketches by ecologis. There is a great youtube video walking you step by step trhough the set up process. You must set the clock by running the setserial sketch in the clock examples folder.
+This pair of sketches is a direct replacement for the original sketches by ecologis. There is a great youtube video walking you step by step through the set up process. You must set the clock by running the setserial sketch in the clock examples folder.
 
 In the Kilocam sketch you can change the Dawn and Dusk variables. These control the time the kilocam swithes from one behaviour to the next. You can change the alarmInterval and darkAlarmInterval variables to control the interval between ESP32cam cycles during the two different periods.
 Currently is ACTION variable is set to 1 this will enable the front facing LED on the ESP to power up.
