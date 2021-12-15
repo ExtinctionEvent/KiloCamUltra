@@ -24,11 +24,11 @@ These sketches are set to from 0600 to 1700 the camera will cycle every 5mins, f
 
 Additionally you will need to solder 2 jumpers from the serial terminals into a twin dupont female terminal. And to allow the terminals to fit the ESP32board you need to remove the right side bottom three terminal blocks. This can be done with a dremmel.
 
-![alt text](https://github.com/ExtinctionEvent/KiloCamUltra/blob/main/images/KilocamPCB.jpg?raw=true)
+![KilocamPCB](https://github.com/ExtinctionEvent/KiloCamUltra/images/blob/main/KilocamPCB.jpg?raw=true)
 
 To finish with a connection like this...
 
-![alt text](https://github.com/ExtinctionEvent/KiloCamUltra/blob/main/images/kilocamwithesp32camandjumpers..jpg?raw=true)
+![Kilocam and ESP32cam with jumpers](https://github.com/ExtinctionEvent/KiloCamUltra/images/blob/main/kilocamwithesp32camandjumpers..jpg?raw=true)
 
 
 
