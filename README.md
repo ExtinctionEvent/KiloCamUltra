@@ -28,7 +28,13 @@ Additionally you will need to solder 2 jumpers from the serial terminals into a 
 
 To finish with a connection like this...
 
-![Kilocam and ESP32cam with jumpers](https://github.com/ExtinctionEvent/KiloCamUltra/blob/main/images/kilocamwithesp32camandjumpers..jpg?raw=true)
+![Kilocam and ESP32cam with jumpers](https://github.com/ExtinctionEvent/KiloCamUltra/blob/main/images/kilocamwithesp32camandjumpers.jpg?raw=true)
+
+### Troubleshooting
+
+Once the jumpers are soldered inplace to the Serial sockets, it becomes more difficult to update the kilocam. I created a bespoke connecting cable that uses deupont connectors to connect to the jumperwires and the board.
+
+Some ESP32Cams, specifically those that come with a programming PCB board have a localalised Right side GND (see image below). These cameras wont work with the original kilocam unless this GND/R pin is removed. This however makes reprogramming the ESP more difficult as this GND is needed for programming the board. With the With kilocamUlta, you can keep the pin in place as the dupont connector is removed (see top image).
 
 
 
