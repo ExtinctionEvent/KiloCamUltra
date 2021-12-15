@@ -34,20 +34,20 @@ To finish with a connection like this...
 
 Step by step guide to the code interactions. 
 
-1. Kilocam alarm triggers and initiates runCamera() function
+1. KiloCam alarm triggers and initiates runCamera() function
 2. The runCamera() function powers up pin5 and the ESP32Cam boots
 3. The runCamera() function then waits to recieve a "O" for On from the ESP32cam
 4. When the ESP32 has booted it sends a O for on by serial to kilocam
-5. When kilocam recieves the O for On, it reciprocates by sending a data payload. The payload consists of a 18byte string - "H" for header, an int to drive a specific Action in the camera, and then the timestamp in form YYYYMMDDHHMMSS.
+5. When kiloCam recieves the O for On, it reciprocates by sending a data payload. The payload consists of a 18byte string - "H" for header, an int to drive a specific Action in the camera, and then the timestamp in form YYYYMMDDHHMMSS.
 6. When ESP32cam recieves this payload it adjusts its activity based upon the Action int (currently this turns on the front LED flash, when Action==1). This can be programmed to drive any specific activity or camera setup you wish.
 7. When the camera has taken the photo and stored it to the SD card, it then sends a X for Off back to the kilocam and powers down
-8. Kilocam waits for the serial X, pauses for a 0.5sec then powers down waiting for the next alarm
+8. KiloCam waits for the serial X, pauses for a 0.5sec then powers down waiting for the next alarm
 
 ### Troubleshooting
 
 Once the jumpers are soldered inplace to the Serial sockets, it becomes more difficult to update the kilocam. I created a bespoke connecting cable that uses deupont connectors to connect to the jumperwires and the board.
 
-Some ESP32Cams, specifically those that come with a programming PCB board have a localalised Right side GND (see image below). These cameras wont work with the original kilocam unless this GND/R pin is removed. This however makes reprogramming the ESP more difficult as this GND is needed for programming the board. With the With kilocamUlta, you can keep the pin in place as the dupont connector is removed (see top image).
+Some ESP32Cams, specifically those that come with a programming PCB board have a localalised Right side GND (see image below). These cameras wont work with the original kiloCam unless this GND/R pin is removed. This however makes reprogramming the ESP more difficult as this GND is needed for programming the board. With the With kiloCamUlta, you can keep the pin in place as the corresponding dupont connector on the kiloCam is removed (see top image).
 
 ![Detail of ESP32Cam boards that come with a programming board that stops kilocam working due to the GND/R pin](https://github.com/ExtinctionEvent/KiloCamUltra/blob/main/images/ESP32Cam%20with%20GND:R.jpg?raw=true)
 
